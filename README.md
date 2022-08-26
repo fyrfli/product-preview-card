@@ -5,13 +5,13 @@
 
 ### Screenshot
 ![](img/mobile-screenshot.png)
-![](img/desktop-screenshot.png)
 
 ### Links
 
 - Solution URL: [Code](https://github.com/fyrfli/product-preview-card)
 - Live Site URL: [Live](https://fyrfli.github.io/product-preview-card)
 
+### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
