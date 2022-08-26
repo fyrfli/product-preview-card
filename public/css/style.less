@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap');
+
+@darkcyan: hsl(158, 36%, 37%);
+@cream: hsl(30, 38%, 92%);
+@verydarkblue: hsl(212, 21%, 14%);
+@darkgreyishblue: hsl(228, 12%, 48%);
+@white: hsl(0, 0%, 100%);
+@black: hsl(0, 0%, 0%);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+a {
+  &:link {
+    text-decoration: none;
+    color: @verydarkblue;
+  }
+
+  &:hover {
+    text-decoration: wavy underline;
+  }
+
+  &:visited {
+    color: lighten(@verydarkblue, 50%);
+  }
+}
+
+.container {
+  font-family: "Fraunces", serif;
+  font-size: 14px;
+}
+
+.product-card {
+  background-color: @cream;
+  display: flex;
+  flex-flow: column;
+  width: 375px;
+  margin: auto;
+  padding: 1.2rem;
+  margin-top: 10%;
+  border-radius: 12px;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 12px 12px 0 0;
+}
+
+.product-details {
+  background-color: @white;
+  padding: 1.8rem;
+  margin-top: 0;
+  border-radius: 0 0 12px 12px;
+}
+
+.product-type {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.4ch;
+  text-transform: uppercase;
+  color: @darkgreyishblue;
+}
+
+.product-name {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+.product-desc {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: @darkgreyishblue;
+  line-height: 2.4ch;
+  padding: 1rem 0;
+}
+
+.product-pricing {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.curr-price {
+  color: @darkcyan;
+  font-size: 2rem;
+}
+
+.norm-price {
+  text-decoration: line-through;
+  color: @darkgreyishblue;
+}
+
+.add-to-cart {
+  padding: 9px;
+  width: 90%;
+  background-color: @darkcyan;
+  color: @white;
+  border-radius: 12px;
+  margin: auto;
+}
+
+.footer {
+  margin-top: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 980px) {
+  .product-card {
+    width: 800px;
+    flex-flow: row;
+  }
+}
