@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Frontend Mentor | Product preview card component</title>
   </head>
@@ -14,8 +14,12 @@
     <main class="container">
       <article class="product-card">
         <section class="product-preview">
-          <img src="img/image-product-mobile.jpg"
-            alt="A bottle of Gabrielle perfume, on it's side, ona flat surface, with leaves in the top left and bottom right of the frame" class="product-img">
+          <picture class="product-pic">
+            <source srcset="img/image-product-desktop.jpg" media="(min-width: 980px)" class="desktop-pic">
+            <img src="img/image-product-mobile.jpg"
+              alt="A bottle of Gabrielle perfume, on it's side, ona flat surface, with leaves in the top left and bottom right of the frame"
+              class="product-img">
+          </picture>
         </section>
         <section class="product-details">
           <h1 class="product-type">Perfume</h1>
