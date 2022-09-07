@@ -1,0 +1,8 @@
+services:
+  app:
+    images: nginx-alpine
+    restart: unless-stopped
+    ports:
+      - '8010:80'
+    volumes:
+      - .:/usr/share/nginx/html
